@@ -11,6 +11,7 @@ BuildRequires:	libpcap >= 0.9.5
 BuildRequires:	libpcap-devel >= 0.9.5
 BuildRequires:	libevent-devel >= 1.3
 BuildRequires:	libdnet-devel >= 1.7
+BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 Scanssh scans the given addresses and networks for running SSH servers. It will
