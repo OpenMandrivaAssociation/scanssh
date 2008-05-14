@@ -1,7 +1,7 @@
 Summary:	Scans the given addresses and networks for running SSH servers
 Name:		scanssh
 Version:	2.1
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	BSD
 Group:		Networking/Other
 URL:		http://www.monkey.org/~provos/scanssh/
@@ -11,7 +11,7 @@ BuildRequires:	libpcap >= 0.9.5
 BuildRequires:	libpcap-devel >= 0.9.5
 BuildRequires:	libevent-devel >= 1.3
 BuildRequires:	libdnet-devel >= 1.7
-BuildRoot:	%{_tmppath}/%{name}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Scanssh scans the given addresses and networks for running SSH servers. It will
