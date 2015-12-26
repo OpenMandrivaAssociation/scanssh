@@ -1,3 +1,5 @@
+%define _disable_lto 1
+
 Summary:	Scans the given addresses and networks for running SSH servers
 Name:		scanssh
 Version:	2.1
