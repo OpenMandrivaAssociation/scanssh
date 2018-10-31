@@ -3,7 +3,7 @@
 Summary:	Scans the given addresses and networks for running SSH servers
 Name:		scanssh
 Version:	2.1
-Release:	27
+Release:	28
 License:	BSD
 Group:		Networking/Other
 Url:		http://www.monkey.org/~provos/scanssh/
