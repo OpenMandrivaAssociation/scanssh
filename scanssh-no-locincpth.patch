@@ -1,6 +1,8 @@
---- configure.in	2001-11-27 11:49:47.000000000 -0500
-+++ configure.in.oden	2002-05-26 12:45:05.000000000 -0400
-@@ -50,8 +50,8 @@
+diff --git a/scanssh-2.1.2/configure.in b/scanssh-2.1.2/configure.in
+index ecff1be..a0a0824 100644
+--- a/scanssh-2.1.2/configure.in
++++ b/scanssh-2.1.2/configure.in
+@@ -98,8 +98,8 @@ AC_ARG_WITH(libpcap,
       ;;
    esac ],
  [ if test -f ${prefix}/include/pcap.h; then

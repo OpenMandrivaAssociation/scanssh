@@ -2,12 +2,12 @@
 
 Summary:	Scans the given addresses and networks for running SSH servers
 Name:		scanssh
-Version:	2.1
-Release:	28
+Version:	2.1.2
+Release:	1
 License:	BSD
 Group:		Networking/Other
 Url:		http://www.monkey.org/~provos/scanssh/
-Source0:	http://www.monkey.org/~provos/scanssh/%{name}-%{version}.tar.bz2
+Source0:	http://www.monkey.org/~provos/scanssh/%{name}-%{version}.tar.gz
 Patch0:		scanssh-no-locincpth.patch
 BuildRequires:	pcap-devel >= 0.9.5
 BuildRequires:	libdnet-devel >= 1.7
@@ -23,11 +23,11 @@ purposes such as ensuring that all machines on your network run the latest SSH
 versions, etc...
 
 %prep
-%setup -q
-%patch0 -p0 
+%autosetup -p2
 
 %build
-%configure2_5x
+export CC=gcc
+%configure
 
 # work around --recheck
 touch *
@@ -42,7 +42,7 @@ install -m755 scanssh %{buildroot}%{_sbindir}
 install -m644 scanssh.1 %{buildroot}%{_mandir}/man1
   
 %files
-%doc README
+%doc README.md
 %{_sbindir}/scanssh
 %{_mandir}/*/*
 
