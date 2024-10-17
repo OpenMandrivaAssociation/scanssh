@@ -6,7 +6,7 @@ Version:	2.1.2
 Release:	2
 License:	BSD
 Group:		Networking/Other
-Url:		http://www.monkey.org/~provos/scanssh/
+Url:		https://www.monkey.org/~provos/scanssh/
 Source0:	http://www.monkey.org/~provos/scanssh/%{name}-%{version}.tar.gz
 Patch0:		scanssh-no-locincpth.patch
 BuildRequires:	pcap-devel >= 0.9.5
