@@ -9,6 +9,11 @@ Group:		Networking/Other
 Url:		https://www.monkey.org/~provos/scanssh/
 Source0:	http://www.monkey.org/~provos/scanssh/%{name}-%{version}.tar.gz
 Patch0:		scanssh-no-locincpth.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pcap-devel >= 0.9.5
 BuildRequires:	libdnet-devel >= 1.7
 BuildRequires:	pkgconfig(libevent)
